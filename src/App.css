@@ -1,33 +1,564 @@
-.App {
+.header-color {
+  background: linear-gradient(to right, #141614, #141614);
+  position: fixed;
+  top: 1.5vw;
+
+}
+
+.top-bar {
+  position: fixed;
+  z-index: 10;
+  background: green;
+  height: 1.3vw
+}
+
+.top-bar .left-side {
+  position: fixed;
+  height: 1.5vw;
+  width: 78.2vw;
+  background: white;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.left-side p {
+  font-size: 1vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.love-div {
+  position: absolute;
+  z-index: 10;
+  left: 7vw;
+  top: 20vw;
+  color: #036635;
+}
+
+.love-div h1 {
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+.stu-div {
+  position: absolute;
+  z-index: 10;
+  left: 20vw;
+  top: 20vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.stu-div h1 {
+  font-weight: bold;
+  font-size: 5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.love-stu-p {
+  position: absolute;
+  z-index: 10;
+  left: 7vw;
+  top: 29vw;
+  color: white;
+}
+
+.love-stu-p p {
+  font-weight: bold;
+  font-size: 1.7vw;
+}
+
+.button {
+  position: absolute;
+  z-index: 10;
+  height: 3.4vw;
+  width: 14vw;
+  left: 7vw;
+  top: 33vw;
+  background: black;
+  color: rgb(161, 155, 155);
+  font-size: 1.4vw;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border: top white;
+  border-radius: 0.3vw;
+
+}
+
+.top-bar .right-side {
+  position: fixed;
+  height: 1.5vw;
+  right: 0vw;
+  background: #036635;
+  width: 21.8vw;
+  text-align: center;
+  color: white;
+  font-style: initial;
+
+}
+
+.top-bar .right-side .right-ptag {
+  font-size: 1vw;
+
+}
+
+.first {
+  position: absolute;
+  background: white;
+  width: 100%;
+  top: 50vw;
+  height: 8vw;
+}
+
+.first h3 {
+  position: absolute;
+  top: 1vw;
+  left: 33vw;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.first .new {
+  position: absolute;
+  top: 0.5vw;
+  left: 22vw;
+  font-weight: bold;
+  font-size: 3vw;
+  color: #036635;
+}
+
+.first .new2 {
+  position: absolute;
+  top: 0.5vw;
+  left: 28vw;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+
+
+.ice-coffee-div {
+  position: relative;
+  top: 58vw;
+  height: 48vw;
+  background: linear-gradient(to right, #141614, #141614);
+
+}
+
+.ice-coffee-div .ice-coffee-img {
+  height: 36vw;
+  position: absolute;
+  top: 7vw;
+  left: 10vw;
+}
+
+.ice-coffee-div .box {
+
+  position: absolute;
+  height: 20vw;
+  width: 40vw;
+  top: 15vw;
+  left: 45vw;
+}
+
+.ice-coffee-div .box .first-h1 {
+  position: absolute;
+  left: 3vw;
+  color: white;
+  font-weight: bold;
+}
+
+.ice-coffee-div .box .second-h1 {
+  position: absolute;
+  left: 19vw;
+  color: #036635;
+  font-weight: bold;
+}
+
+.ice-coffee-div .box .first-h4 {
+  position: absolute;
+  left: 2vw;
+  top: 6vw;
+  color: white;
+  font-weight: bold;
+}
+
+.ice-coffee-div .box .second-h4 {
+  position: absolute;
+  left: 15.2vw;
+  top: 6vw;
+  color: #036635;
+  font-weight: bold;
+}
+
+.ice-coffee-div .box .thirt-h4 {
+  position: absolute;
+  left: 24vw;
+  top: 6vw;
+  color: white;
+  font-weight: bold;
+}
+
+.ice-coffee-div .box .fourth-h4 {
+  position: absolute;
+  left: 1.7vw;
+  top: 8vw;
+  color: white;
+  font-weight: bold;
+}
+
+.ice-coffee-div .box .fifth-h4 {
+  position: absolute;
+  left: 0vw;
+  top: 10vw;
+  color: white;
+  font-weight: bold;
+}
+
+
+.third-page {
+  position: absolute;
+  background: #006666;
+  width: 100%;
+  top: 106vw;
+  height: 8vw;
+}
+
+.third-page .third-page-first-h1 {
+  position: absolute;
+  color: white;
+  left: 37vw;
+  font-weight: bold;
+}
+
+.third-page .third-page-second-h1 {
+  position: absolute;
+  color: black;
+  left: 52vw;
+  font-weight: bold;
+}
+
+.category-tabs {
+  position: absolute;
+  top: 4.5vw;
+  left: 38%;
+}
+
+.nav-controller {
+  position: absolute;
+  left: 19vw;
+}
+
+.nav-controller .title {
+  font-size: 1.3vw;
+  font-weight: bold
+}
+
+.logo-img {
+  position: fixed;
+  z-index: 100;
+  height: 10vw;
+  width: 10vw;
+  left: 4vw;
+  top: -0.3vw;
+
+}
+
+.main-img {
+  position: absolute;
+  height: 55vw;
+  width: 100vw;
+  top: 0vw;
+  left: 0vw;
+}
+
+.last-page {
+  position: absolute;
+  width: 100%;
+  height: 50vw;
+  top: 114vw;
+}
+
+.beans-img-div {
+  position: absolute;
+  top: 3vw;
+  left: 13vw;
+  height: 20vw;
+  width: 20vw;
+
+}
+
+.last-page .beans-img {
+  position: absolute;
+  /* top:3vw;
+  left:13vw; */
+  width: 100%;
+  height: 100%;
+  border-radius: 100vw;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.last-page .tea-img {
+  position: absolute;
+  top: 3vw;
+  left: 40vw;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100vw;
+}
+
+.last-page .equipment-img {
+  position: absolute;
+  top: 3vw;
+  right: 13vw;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100vw;
+}
+
+.beans-text {
+  position: absolute;
+  width: 25vw;
+  top: 25vw;
+  left: 10vw;
+  text-align: center;
+}
+
+.tea-text {
+  position: absolute;
+  width: 25vw;
+  top: 25vw;
+  left: 37vw;
+  text-align: center;
+}
+
+.equipment-text {
+  position: absolute;
+  width: 25vw;
+  top: 25vw;
+  right: 10vw;
+  text-align: center;
+}
+
+.beans-text hr {
+  position: relative;
+  border-color: #141614;
+  width: 14vw;
+  left: 5.5vw;
+
+}
+
+.tea-text hr {
+  position: relative;
+  border-color: #141614;
+  width: 14vw;
+  left: 5.5vw;
+}
+
+.equipment-text hr {
+  position: relative;
+  border-color: #141614;
+  width: 14vw;
+  left: 5.5vw;
+}
+
+.beans-text .beans-text-h1 {
+  font-weight: bold;
+  font-size: 2.5vw;
+
+}
+
+.beans-text .beans-text-h4 {
+  font-size: 1.2vw;
+}
+
+.tea-text .tea-text-h1 {
+  font-weight: bold;
+  font-size: 2.5vw;
+
+}
+
+.tea-text .tea-text-h4 {
+  font-size: 1.2vw;
+}
+
+.equipment-text .equipment-text-h1 {
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+.equipment-text .equipment-text-h4 {
+  font-size: 1.2vw;
+}
+
+.footer {
+  background: purple;
+  position: relative;
+  height: 45vw;
+  width: 100%;
+  top: 110vw
+}
+
+.footer .top-part {
+  position: relative;
+  background: rgb(238, 234, 234);
+  height: 35vw;
+  width: 100%;
+}
+
+.footer .bottom-part {
+  position: relative;
+  background: linear-gradient(to right, #141614, #141614);
+  height: 10vw;
+  width: 100%;
+}
+
+.footer .top-part .help-section {
+  position: absolute;
+  height: 15vw;
+  width: 13vw;
+
+  left: 16vw;
+  top: 2vw;
+}
+
+.footer .top-part .help-section h2 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.footer .top-part .company-section {
+  position: absolute;
+  height: 15vw;
+  width: 20vw;
+
+  left: 36vw;
+  top: 2vw;
+}
+
+.footer .top-part .company-section h2 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.footer .top-part .about-section {
+  position: absolute;
+  height: 15vw;
+  width: 20vw;
+
+  left: 16vw;
+  top: 19vw;
+}
+
+.footer .top-part .share-section {
+  position: absolute;
+  height: 15vw;
+  width: 20vw;
+
+  left: 69vw;
+  top: 2vw;
+}
+
+.footer .top-part .about-section h2 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.footer .top-part .share-section h2 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.footer .top-part .about-section h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5vw;
+}
+
+.footer .top-part .company-section h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5vw;
+}
+
+.footer .top-part .company-section h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5vw;
+}
+
+.footer .top-part .help-section h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5vw;
+}
+
+.footer .top-part .help-section h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5vw;
+}
+
+.footer .left-part-footer {
+  position: absolute;
+  height: 7vw;
+  width: 10vw;
+  left: 7vw;
+  top: 1vw;
+  color: white;
+}
+
+.footer .left-part-footer h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2vw;
+}
+
+.footer .right-part-footer {
+  position: absolute;
+  height: 7vw;
+  width: 80vw;
+  text-align: end;
+  right: 7vw;
+  top: 1vw;
+  color: white;
+}
+
+.footer .right-part-footer h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2vw;
+}
+
+.second-nav-controller {
+  background: linear-gradient(to right, #141614, #141614);
+  display: flex;
+}
+
+/* #dotted{
+  display: none;
+  
+} */
+
+
+
+#demo-menu-lower-left {
+  width: 2vw;
+  height: 2vw;
+  color: white;
+}
+
+/* @media (max-width: 1024px) { */
+  #dotted {
+    display: grid;
+    position: absolute;
+    z-index: 100;
+    top: 2vw;
+    left:5vw;
+    height: 2vw;
+    width: 2vw;
   }
-  to {
-    transform: rotate(360deg);
-  }
+/* } */
+
+.coffee-body{
+  position: relative;
+  
+  top:10vw;
+
+}
+.total-div{
+  position: fixed;
+  right:0vw;
+  top:5vw;
 }
