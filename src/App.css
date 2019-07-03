@@ -4,12 +4,19 @@
   top: 1.5vw;
 
 }
-
+.button .button-link{
+  color:white;
+  text-decoration: none;
+}
 .top-bar {
   position: fixed;
   z-index: 10;
   background: green;
   height: 1.3vw
+}
+.a-tag-font{
+  text-decoration: none;
+  color:black;
 }
 
 .top-bar .left-side {
@@ -20,9 +27,10 @@
   text-align: center;
 }
 
-.left-side p {
+.left-side .left-side-ptag {
   font-size: 1vw;
 }
+
 
 .love-div {
   position: absolute;
@@ -102,22 +110,24 @@
   position: absolute;
   background: white;
   width: 100%;
-  top: 50vw;
+  top: 52vw;
   height: 8vw;
+  text-align: center
 }
 
-.first h3 {
+.first .new0 {
   position: absolute;
-  top: 1vw;
+  top: 0.7vw;
   left: 33vw;
   font-weight: bold;
   font-size: 3vw;
+  
 }
 
 .first .new {
   position: absolute;
-  top: 0.5vw;
-  left: 22vw;
+  top: 0.7vw;
+  left: 54.5vw;
   font-weight: bold;
   font-size: 3vw;
   color: #036635;
@@ -125,8 +135,8 @@
 
 .first .new2 {
   position: absolute;
-  top: 0.5vw;
-  left: 28vw;
+  top: 0.7vw;
+  left: 61vw;
   font-weight: bold;
   font-size: 3vw;
 }
@@ -162,13 +172,15 @@
   left: 3vw;
   color: white;
   font-weight: bold;
+  font-size: 3vw;
 }
 
 .ice-coffee-div .box .second-h1 {
   position: absolute;
-  left: 19vw;
+  left: 16vw;
   color: #036635;
   font-weight: bold;
+  font-size: 3vw;
 }
 
 .ice-coffee-div .box .first-h4 {
@@ -177,22 +189,25 @@
   top: 6vw;
   color: white;
   font-weight: bold;
+  font-size: 1.8vw;
 }
 
 .ice-coffee-div .box .second-h4 {
   position: absolute;
-  left: 15.2vw;
+  left: 16.2vw;
   top: 6vw;
   color: #036635;
   font-weight: bold;
+  font-size: 1.8vw;
 }
 
 .ice-coffee-div .box .thirt-h4 {
   position: absolute;
-  left: 24vw;
+  left: 25.7vw;
   top: 6vw;
   color: white;
   font-weight: bold;
+  font-size: 1.8vw;
 }
 
 .ice-coffee-div .box .fourth-h4 {
@@ -201,6 +216,7 @@
   top: 8vw;
   color: white;
   font-weight: bold;
+  font-size:1.8vw;
 }
 
 .ice-coffee-div .box .fifth-h4 {
@@ -209,6 +225,7 @@
   top: 10vw;
   color: white;
   font-weight: bold;
+  font-size: 1.8vw;
 }
 
 
@@ -225,6 +242,8 @@
   color: white;
   left: 37vw;
   font-weight: bold;
+  font-size: 4vw;
+  top:-0.5vw;
 }
 
 .third-page .third-page-second-h1 {
@@ -232,6 +251,8 @@
   color: black;
   left: 52vw;
   font-weight: bold;
+  font-size: 4vw;
+  top:-0.5vw;
 }
 
 .category-tabs {
@@ -390,7 +411,7 @@
 }
 
 .footer {
-  background: purple;
+  
   position: relative;
   height: 45vw;
   width: 100%;
@@ -398,17 +419,18 @@
 }
 
 .footer .top-part {
-  position: relative;
+  position: absolute;
   background: rgb(238, 234, 234);
   height: 35vw;
   width: 100%;
 }
 
 .footer .bottom-part {
-  position: relative;
+  position: absolute;
   background: linear-gradient(to right, #141614, #141614);
   height: 10vw;
   width: 100%;
+  bottom: 0;
 }
 
 .footer .top-part .help-section {
@@ -460,6 +482,7 @@
 .footer .top-part .about-section h2 {
   font-size: 2vw;
   font-weight: bold;
+  
 }
 
 .footer .top-part .share-section h2 {
@@ -470,18 +493,14 @@
 .footer .top-part .about-section h6 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5vw;
+  line-height:1.3;
 }
 
 .footer .top-part .company-section h6 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5vw;
+  line-height:1.3;
 }
-
-.footer .top-part .company-section h6 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.5vw;
-}
-
 .footer .top-part .help-section h6 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5vw;
@@ -490,6 +509,7 @@
 .footer .top-part .help-section h6 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5vw;
+  line-height:1.3;
 }
 
 .footer .left-part-footer {
@@ -526,10 +546,10 @@
   display: flex;
 }
 
-/* #dotted{
+#dotted{
   display: none;
   
-} */
+}
 
 
 
@@ -539,26 +559,348 @@
   color: white;
 }
 
-/* @media (max-width: 1024px) { */
-  #dotted {
-    display: grid;
-    position: absolute;
-    z-index: 100;
-    top: 2vw;
-    left:5vw;
-    height: 2vw;
-    width: 2vw;
-  }
-/* } */
+
 
 .coffee-body{
   position: relative;
-  
   top:10vw;
 
 }
 .total-div{
   position: fixed;
-  right:0vw;
-  top:5vw;
+  background: #036635;
+  right:3vw;
+  top:40vw;
+}
+
+.contact-body{
+  position: relative;
+  top:10vw;
+  left:40%;
+  
+}
+.orders-view-client{
+  position: fixed;
+  background: #036635;
+  right:3vw;
+  height: 30vw;
+  width: 10vw;
+}
+.Buttons-body{
+  position: absolute;
+  background: #036635;
+  left:25vw;
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 430px){
+  #dotted {
+  display: grid;
+  position: absolute;
+  z-index: 100;
+  top: 1vw;
+  left:5vw;
+  height: 8vw;
+  width: 8vw;
+  
+}
+#dotted #menu-id{
+  background: #036635;
+}
+#dotted #menu-id .title{
+  color:white;
+  text-decoration: none;
+}
+.first {
+  position: absolute;
+  background: white;
+  width: 100%;
+  top: 52vw;
+  height: 8vw;
+  
+}
+
+.first .new0 {
+  position: absolute;
+  top: -9vw;
+  left: 33vw;
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: center
+}
+
+.first .new {
+  position: absolute;
+  top: -9vw;
+  left: 54.5vw;
+  font-weight: bold;
+  font-size: 3vw;
+  color: #036635;
+}
+
+.first .new2 {
+  position: absolute;
+  top: -9vw;
+  left: 61vw;
+  font-weight: bold;
+  font-size: 3vw;
+}
+.third-page {
+  position: absolute;
+  background: #006666;
+  width: 100%;
+  top: 106vw;
+  height: 8vw;
+}
+
+.third-page .third-page-first-h1 {
+  position: absolute;
+  color: white;
+  left: 37vw;
+  font-weight: bold;
+  font-size: 4vw;
+  top:-5vw;
+}
+
+.third-page .third-page-second-h1 {
+  position: absolute;
+  color: black;
+  left: 52.5vw;
+  font-weight: bold;
+  font-size: 4vw;
+  top:-5vw;
+}
+.last-page{
+  z-index: 100;
+  position: absolute;
+  background: white;
+  height: 100vw
+
+}
+.beans-text{
+  position: absolute;
+  top:6vw;
+  left:45vw;
+  width:50vw;
+  height:30vw; 
+
+  
+}
+.beans-text .beans-text-h1{
+  position: absolute;
+  top:-7vw;
+  font-size: 6vw;
+  left:9vw;
+}
+.beans-text hr{
+  position: absolute;
+  top:3vw;
+  left:10vw;
+  width: 30vw
+}
+.beans-text .beans-text-h4{
+  position: relative;
+  font-size: 3vw;
+  font-weight: bold;
+  line-height:2;
+  
+}
+.tea-text{
+  position: absolute;
+  top:40vw;
+  left:45vw;
+  width:50vw;
+  height:30vw; 
+
+  
+}
+.tea-text .tea-text-h1{
+  position: absolute;
+  top:-7vw;
+  font-size: 6vw;
+  left:12vw;
+}
+.tea-text hr{
+  position: absolute;
+  top:3vw;
+  left:10vw;
+  width: 30vw
+}
+.tea-text .tea-text-h4{
+  position: relative;
+  font-size: 3vw;
+  font-weight: bold;
+  line-height:2;
+  
+}
+.equipment-text{
+  position: absolute;
+  top:72vw;
+  left:45vw;
+  width:50vw;
+  height:30vw; 
+
+  
+}
+.equipment-text .equipment-text-h1{
+  position: absolute;
+  top:-7vw;
+  font-size: 6vw;
+  left:3vw;
+}
+.equipment-text hr{
+  position: absolute;
+  top:3vw;
+  left:10vw;
+  width: 30vw
+}
+.equipment-text .equipment-text-h4{
+  position: relative;
+  font-size: 3vw;
+  font-weight: bold;
+  line-height:2;
+  
+}
+
+.beans-img-div{
+  height: 30vw;
+  width: 30vw;
+}
+.last-page .tea-img{
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  left:13vw;
+  top:35vw;
+  
+}
+.last-page .equipment-img{
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  left:13vw;
+  top:67vw;
+}
+
+
+                        /* Footer Media query */
+.footer{
+  position: absolute;
+  top:220vw;
+  
+}
+.footer .top-part .help-section{
+  
+  position: absolute;
+  height: 32vw;
+  width: 20vw;
+  left:3vw;
+  text-align: center;
+}
+.footer .top-part .help-section h2{
+  position: absolute;
+  top:-10vw;
+  left:6vw;
+  font-size: 4vw;
+}
+.footer .top-part .help-section h6{
+  font-size: 2vw;
+  font-weight: bold;
+  line-height:2;
+  
+}
+.footer .top-part .company-section{
+  
+  position: absolute;
+  height: 32vw;
+  width: 28vw;
+  left:25vw;
+  text-align: center;
+}
+.footer .top-part .company-section h2{
+  position: absolute;
+  top:-10vw;
+  left:1vw;
+  font-size: 4vw;
+}
+.footer .top-part .company-section h6{
+  font-size: 2vw;
+  font-weight: bold;
+  line-height:2;
+  
+}
+.footer .top-part .about-section{
+  
+  position: absolute;
+  top:2vw;
+  height: 32vw;
+  width: 20vw;
+  left:55vw;
+  text-align: center;
+}
+.footer .top-part .about-section h2{
+  position: absolute;
+  top:-10vw;
+  left:1vw;
+  font-size: 4vw;
+}
+.footer .top-part .about-section h6{
+  font-size: 2vw;
+  font-weight: bold;
+  line-height:2;
+  
+}
+.footer .top-part .share-section{
+  
+  position: absolute;
+  top:2vw;
+  height: 32vw;
+  width: 20vw;
+  left:78vw;
+  text-align: center;
+}
+.footer .top-part .share-section h2{
+  position: absolute;
+  top:-10vw;
+  left:4vw;
+  font-size: 4vw;
+}
+.footer .top-part .share-section h3{
+  font-size: 7vw;
+  font-weight: bold;
+  line-height:1.3;
+  
+}
+
+#bottom-part-id{
+  background: balck;
+  position: absolute;
+  top:35vw;
+  height: 33vw;
+}
+#bottom-part-id .left-part-footer h6{
+  font-size: 2.5vw;
+  line-height: 1.2
+}
+#bottom-part-id .right-part-footer #h6-id{
+  font-size: 2.5vw;
+  line-height: 1.2;
+  position: absolute;
+  left:22vw;
+  
+}
+.button{
+  font-size: 3vw;
+  position:absolute;
+  width: 23vw;
+  height: 10vw;
+}
+.top-bar{
+  display: none;
+}
+
+
 }

@@ -14,14 +14,18 @@ class App extends React.Component {
     <div className="demo-big-content">
     <Layout>
         <div className='logo-img'> 
-             <img className='logo-img' src={logo}/> 
+             <img className='logo-img' alt="logo" src={logo}/> 
         </div> 
         <div className='top-bar'>
             <div className='left-side'>
-                <p>Free shipping on orders of £30+ | Use Code STULOVE > offer details ></p>
+                <p className=' left-side-ptag' >
+                Free shipping on orders of £30+ | Use Code STULOVE > offer details >
+                </p>
             </div>
             <div className='right-side'>
-              <p className='right-ptag'>Find nearest store</p>
+              <p className='right-ptag'>
+                Find nearest store
+              </p>
             </div>
         </div>
         <Header className='header-color'  title=" " scroll>
@@ -37,19 +41,19 @@ class App extends React.Component {
             </Navigation>
         </Header>
         <Navigation id='dotted' className='dotted-menu' >
-        <div style={{position: 'relative'}}>
-    <IconButton name="Menu" id="demo-menu-lower-left" />
-    <Menu target="demo-menu-lower-left">
-        <MenuItem><Link className="title" to="/Landing">STUBUCKS</Link> </MenuItem>
-        <MenuItem><Link className="title" to="/coffee">Coffee</Link></MenuItem>
-        <MenuItem ><Link className="title" to="/tea">Tea</Link></MenuItem>
-        <MenuItem><Link className="title"to="/menu">Menu</Link></MenuItem>
-        <MenuItem><Link className="title" to="/rewards">Rewards</Link></MenuItem>
-        <MenuItem><Link className="title" to="/wanttjot">Want to join our team?</Link></MenuItem>
-        <MenuItem><Link className="title" to="/locations">Locations</Link></MenuItem>
-        <MenuItem><Link className="title" to="/specials">Specials</Link></MenuItem>
-    </Menu>
-</div>
+            <div style={{position: 'relative'}}>
+                <IconButton name=''  id="demo-menu-lower-left" />
+                <Menu id='menu-id' target="demo-menu-lower-left">
+                    <MenuItem><Link className="title" to="/Landing">STUBUCKS</Link> </MenuItem>
+                    <MenuItem><Link className="title" to="/coffee">Coffee</Link></MenuItem>
+                    <MenuItem><Link className="title" to="/tea">Tea</Link></MenuItem>
+                    <MenuItem><Link className="title"to="/menu">Menu</Link></MenuItem>
+                    <MenuItem><Link className="title" to="/rewards">Rewards</Link></MenuItem>
+                    <MenuItem><Link className="title" to="/wanttjot">Want to join our team?</Link></MenuItem>
+                    <MenuItem><Link className="title" to="/locations">Locations</Link></MenuItem>
+                    <MenuItem><Link className="title" to="/specials">Specials</Link></MenuItem>
+                </Menu>
+            </div>
         </Navigation>
         
                

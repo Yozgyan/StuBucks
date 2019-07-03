@@ -5,7 +5,7 @@ const mysql = require('mysql')
 
 const app = express();
 
-const SELECT_ALL_ORDERS_QUERY = 'SELECT * FROM coffeeOrder'
+const SELECT_ALL_ORDERS_QUERY = 'SELECT * FROM coffeeshop1'
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
 
 });
 
-connection.connect(err => {
+connection.connect(err => { 
     if(err) {
         return err;
     }
@@ -30,15 +30,15 @@ app.get('/', (req, res) =>{
 });
 
 app.get('/products/add', (req, res) => {
-    const { HotDrinks, Quantity} = req.query;
-    const INSERT_ORDERS_QUERY = `INSERT INTO coffeeOrder(HotDrinks, Quantity) VALUES('${HotDrinks}', ${Quantity} )`
+    const {Name, Qty} = req.query;
+    const INSERT_ORDERS_QUERY = `INSERT INTO coffeeshop1(Name, Qty) VALUES('${Name}', ${Qty} )` 
     res.send('adding product');
-    connection.query(INSERT_ORDERS_QUERY, (err, results) =>
+    connection.query(INSERT_ORDERS_QUERY, (err, results) => 
     {
         if(err){
             return res.send(err)
         }
-        else {
+        else { 
             return res.send('successfully added order')
         }
     })
@@ -49,8 +49,8 @@ app.get('/products', (req, res) => {
         if (err){
             return res.send(err)
         }else{ 
-            return res.json({
-                data:results
+            return res.json({  
+                data:results 
             })
         }
     })

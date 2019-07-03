@@ -9,12 +9,12 @@ import {Link} from 'react-router-dom'
 
 
 class Landing extends Component{
-    
+
     render(){
         return(
             <div className='nav-bar' style={{width:'100%', margin: 'auto'}}> 
                 <div className='main'>
-                    <img className='main-img' src={Stu}/> 
+                    <img className='main-img' alt='Main'src={Stu}/> 
                 </div>
                 <div className='love-div'>
                     <h1>Love</h1>
@@ -25,12 +25,17 @@ class Landing extends Component{
                 <div className='love-stu-p'>
                     <p>Look at our range and choose the Stu that suits you.</p>
                 </div>
-                <button className='button'><Link to="/coffee">Order your coffee</Link></button>
+                <button className='button'>
+                    <Link className='button-link' to="/coffee">Order your coffee</Link>
+                </button>
                 <div className='first'>
-                    <h3>Try something <p className='new'>new</p><p className='new2'>?</p></h3>
+                    <h3 className='new0'>Try something  </h3>
+                    <h3 className='new'>new</h3>
+                    <h3 className='new2'>?</h3>
+                    
                 </div>
                 <div className='ice-coffee-div'>
-                    <img className='ice-coffee-img' src={icecoffee}/>
+                    <img className='ice-coffee-img' alt="ce-coffee" src={icecoffee}/>
                     <div className='box'>
                         <h1 className='first-h1'>The new </h1>
                         <h1 className='second-h1'>StuBrew</h1>
@@ -47,7 +52,7 @@ class Landing extends Component{
                 </div>
                 <div className='last-page'>
                     <div className='beans-img-div'>
-                        <img className='beans-img' src={beans}/>
+                        <img className='beans-img' alt="beans-img" src={beans}/>
                     </div>
                     <div className='beans-text'>
                         <h1 className='beans-text-h1'>Shop Coffee</h1>
@@ -57,8 +62,8 @@ class Landing extends Component{
                         </h4>
 
                     </div>
-                    <div>
-                        <img className='tea-img' src={tea}/>
+                    <div > 
+                        <img className='tea-img' alt='Tea' src={tea}/>
                     </div>
                     <div className='tea-text'>
                         <h1 className='tea-text-h1'>Shop Tea</h1>
@@ -68,8 +73,8 @@ class Landing extends Component{
                         </h4>
 
                     </div>
-                    <div>
-                        <img className='equipment-img' src={equipment}/>
+                    <div >
+                        <img className='equipment-img' alt='Equipment' src={equipment}/>
                     </div>
                     <div className='equipment-text'>
                         <h1 className='equipment-text-h1'>Shop Equipment</h1>
@@ -82,7 +87,7 @@ class Landing extends Component{
                 </div>
                 <div className='footer'>
                     <div className='top-part'>
-                        <div className='help-section'>
+                        <div  className='help-section'> 
                             <h2>Help</h2>
                             <h6>My account<br></br>Stu Card<br></br>Stu Rewards<br></br>Shippin & Returns<br></br>Current Offers<br></br>Contact Us</h6>
                         </div>
@@ -97,15 +102,21 @@ class Landing extends Component{
                         </div>
                         <div className='share-section'>
                             <h2>Share</h2>
-                            <h3><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-pinterest-square"></i></h3>
+                            <h3>
+                                <a className='a-tag-font' href="/"> <i class="fab fa-facebook"></i></a>
+                                <a className='a-tag-font' href="/"> <i class="fab fa-instagram"></i></a>
+                                <a className='a-tag-font' href="/"> <i class="fab fa-linkedin"></i></a>
+                                <a className='a-tag-font' href="/"> <i class="fab fa-twitter-square"></i></a>
+                                <a className='a-tag-font' href="/"> <i class="fab fa-pinterest-square"></i></a>
+                            </h3>
                         </div>
                     </div>
-                    <div className='bottom-part'>
+                    <div id='bottom-part-id' className='bottom-part'>
                         <div className='left-part-footer'>
                             <h6>StuBucks Chester<br></br>Cheshire<br></br>Since 2019</h6>
                         </div>
                         <div className='right-part-footer'>
-                            <h6>Stubucks Coffee | Privacy Policy | Terms of Service<br></br>Stubucks is not a registered trademark, in fact it was just something Stuart made Dan make even though he didn't have any spare<br></br>time.But he likes designing stuff so that's OK.</h6>
+                            <h6 id='h6-id'>Stubucks Coffee | Privacy Policy | Terms of Service<br></br>Stubucks is not a registered trademark, in fact it was just something Stuart made Dan make even though he didn't have any spare<br></br>time.But he likes designing stuff so that's OK.</h6>
                         </div>
                     </div>
                 </div>
