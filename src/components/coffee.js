@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import {FABButton, Icon} from 'react-mdl'
+import {FABButton, Icon, Button} from 'react-mdl'
 
 class Coffee extends Component{
    constructor(){
@@ -92,7 +92,7 @@ addOrder = _ =>{
                                 <Icon name="+" />
                             </FABButton>
                             <h2>{this.state.Quantity}</h2> 
-                            <button onClick={this.addOrder}>Add product</button>          
+                                     
                         </h1>
                     </div>
                     <div className='Capuchino'>
@@ -117,9 +117,15 @@ addOrder = _ =>{
                             <h2>{this.state.Quantity2}</h2>  
                         </h1>
                     </div>
-                </div>    
+                </div>  
+                <div className='Button-add-div'>
+                    
+                    <Button raised accent ripple onClick={this.addOrder}>BUY</Button>
+                    
+                </div>  
                 <div>
                     <h2 className='total-div'>Total £ { this.state.cash}</h2>
+                    
                 </div>       
             </div>
         );

@@ -103,11 +103,11 @@ class Landing extends Component{
                         <div className='share-section'>
                             <h2>Share</h2>
                             <h3>
-                                <a className='a-tag-font' href="/"> <i class="fab fa-facebook"></i></a>
-                                <a className='a-tag-font' href="/"> <i class="fab fa-instagram"></i></a>
-                                <a className='a-tag-font' href="/"> <i class="fab fa-linkedin"></i></a>
-                                <a className='a-tag-font' href="/"> <i class="fab fa-twitter-square"></i></a>
-                                <a className='a-tag-font' href="/"> <i class="fab fa-pinterest-square"></i></a>
+                                <a className='a-tag-font' href="http://localhost:3000/locations"> <i class="fab fa-facebook"></i></a>
+                                <a className='a-tag-font' href="http://localhost:3000/Menu"> <i class="fab fa-instagram"></i></a>
+                                <a className='a-tag-font' href="http://localhost:3000/Rewards"> <i class="fab fa-linkedin"></i></a>
+                                <a className='a-tag-font' href="http://localhost:3000/Specials"> <i class="fab fa-twitter-square"></i></a>
+                                <a className='a-tag-font' href="http://localhost:3000/Tea"> <i class="fab fa-pinterest-square"></i></a>
                             </h3>
                         </div>
                     </div>

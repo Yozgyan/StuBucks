@@ -15,9 +15,9 @@ class Locations extends Component{
         if(this.state.activeTab === 0){
             return(
                <div  className='projects-grid'> 
-                <div>
-                    <Card className='firstCard' shadow={50} style={{minWidth: '450', margin: 'auto'}} >
-                        <CardTitle style={{color: 'black', height:'176px;'}}>Manchester</CardTitle>
+                <div >
+                    <Card className='firstCard' shadow={50}  >
+                        <CardTitle >Manchester</CardTitle>
                         <img src={Manchester}/>
                         <CardText>
                             

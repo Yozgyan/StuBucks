@@ -1,5 +1,5 @@
-import React,{Component} from 'react'
-
+import React,{Component} from 'react';
+import baristaView from './baristaView.jpg'
 
 class Tea extends Component{
     constructor(props){
@@ -31,18 +31,20 @@ class Tea extends Component{
         return( 
 
             <div className='contact1-body'>
-                <div>
+            <div>
+                    <img src={baristaView}/>
+                </div>
+                <div className='SQL-view'>
                     <h1>
                         Client Orders:
                     </h1>
-                </div>
-                
-                <div>
                     <ol>
                         {orders.map(this.renderOrders)}
                     </ol>
                 </div>
-
+                <div>
+                    <img src={baristaView}/>
+                </div>
             </div>
         )
     }
