@@ -1,26 +1,21 @@
 import React, {Component} from 'react';
-import {Grid, Cell} from 'react-mdl'
+import HolidayPromo from './HolidayPromo.png'
+import Choose from './Choose.jpg'
+import Sticks from './Sticks.jpg'
 
 class Specials extends Component{
     render(){
         return(
-            <div className='contact-body'>
-                <Grid className='contact-grid'>
-                    <Cell className='cell1' col='{6}'>
-                        <h2>Starbucks</h2>
-                        <p style={{width: '75%', margin: 'auto', paddingTop: '1em', }}>text text text texte textetentket nten ktjnk tnek n</p>
-                    </Cell>
-                    <Cell className='cell2' col='{6}'>
-                        <div className='details'>
-                            <h2>Starbucks</h2>
-                            <h3>Starbucks</h3>
-                            <h3>Starbucks</h3>
-                            <h3>Starbucks</h3>
-                            <h3>Starbucks, <br></br>Starbucks</h3>
-                        </div>
-                    </Cell>
-
-                </Grid>
+            <div className='specials-body'>
+                <div className='spec-first-img'>
+                    <img className='Promo-img' alt='HolidayIMG' src={HolidayPromo}/>
+                </div>
+                <div className='spec-second-img'>
+                    <img className='Choose-img' alt='ChooseIMG' src={Choose}/>
+                </div>
+                <div className='spec-thirth-img'>
+                    <img className='Sticks-img' alt='SticksIMG' src={Sticks}/>
+                </div>
             </div>
         )
     }

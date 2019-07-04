@@ -31,8 +31,8 @@ class App extends React.Component {
         <Header className='header-color'  title=" " scroll>
             <Navigation className='nav-controller'>
                 <Link className="title" to="/Landing">STUBUCKS</Link>  
-                <Link className="title" to="/coffee">Coffee</Link>
-                <Link className="title" to="/tea">Tea</Link>
+                <Link className="title" to="/coffee">Make Order</Link>
+                <Link className="title" to="/tea">Barista View</Link>
                 <Link className="title"to="/menu">Menu</Link>
                 <Link className="title" to="/rewards">Rewards</Link>
                 <Link className="title" to="/wanttjot">Want to join our team?</Link>
@@ -45,8 +45,8 @@ class App extends React.Component {
                 <IconButton name=''  id="demo-menu-lower-left" />
                 <Menu id='menu-id' target="demo-menu-lower-left">
                     <MenuItem><Link className="title" to="/Landing">STUBUCKS</Link> </MenuItem>
-                    <MenuItem><Link className="title" to="/coffee">Coffee</Link></MenuItem>
-                    <MenuItem><Link className="title" to="/tea">Tea</Link></MenuItem>
+                    <MenuItem><Link className="title" to="/coffee">Make Order</Link></MenuItem>
+                    <MenuItem><Link className="title" to="/tea">Barista View</Link></MenuItem>
                     <MenuItem><Link className="title"to="/menu">Menu</Link></MenuItem>
                     <MenuItem><Link className="title" to="/rewards">Rewards</Link></MenuItem>
                     <MenuItem><Link className="title" to="/wanttjot">Want to join our team?</Link></MenuItem>

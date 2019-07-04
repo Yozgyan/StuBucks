@@ -1,19 +1,14 @@
 import React,{Component} from 'react'
+import rewards from './rewards.png'
+import StarbucksRewards from './StarbucksRewards.jpg'
 
 
 class Rewards extends Component{
-    constructor(){
-        super();
-        this.state = {name: 'Uzi'}
-
-    }
-    check(){
-        console.log(this.state.name)
-    }
+    
     render(){
         return(
             <div className='contact-body'>
-                <button onClick={this.check}>Button</button> 
+                <img src={StarbucksRewards}/>
             </div>
         )
     }

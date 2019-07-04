@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions,  CardMenu, IconButton} from 'react-mdl'
-
+import Manchester from './Manchester.jpg'
+import London from './London.jpg'
+import Liverpool from './Liverpool.jpg'
 
 
 class Locations extends Component{
@@ -10,35 +12,63 @@ class Locations extends Component{
     }
 
     toggleCategories(){
-        if(this.state.activeTab === 1){
+        if(this.state.activeTab === 0){
             return(
                <div  className='projects-grid'> 
-                    <Card shadow={10} style={{minWidth: '450', margin: 'auto'}}>
-                        <CardTitle style={{color: 'white', height:'176px;'}}>React Project 1</CardTitle>
-                        <CardText>Text hereText hereText hereText hereText hereText hereText hereText hereText her</CardText>
+                <div>
+                    <Card className='firstCard' shadow={50} style={{minWidth: '450', margin: 'auto'}} >
+                        <CardTitle style={{color: 'black', height:'176px;'}}>Manchester</CardTitle>
+                        <img src={Manchester}/>
+                        <CardText>
+                            
+                        </CardText>
                         <CardActions border>
-                            {/* <Button colored>GitHub</Button> */}
-                            {/* <Button colored>CodePen</Button>
-                            <Button colored>LiveDemo</Button> */}
+                            
                         </CardActions>              
                         <CardMenu style={{color:'white'}}>
                             <IconButton name='share'/>    
                         </CardMenu>     
                     </Card>
+                    </div>
+                    <div>
+                    <Card className='firstCard'shadow={10} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: 'Black', height:'176px;',}}>London</CardTitle>
+                        <img src={London}/>
+                        <CardText></CardText>
+                        <CardActions border>
+                            
+                        </CardActions>              
+                        <CardMenu style={{color:'white'}}>
+                            <IconButton name='share'/>    
+                        </CardMenu>     
+                    </Card>
+                    </div>
+                    <div>
+                    <Card className='firstCard' shadow={50} style={{minWidth: '550', margin: 'auto'}}>
+                        <CardTitle style={{color: 'Black', height:'176px;',}}>Liverpool</CardTitle>
+                        <img src={Liverpool}/>
+                        <CardText></CardText>
+                        <CardActions border>
+                            
+                        </CardActions>              
+                        <CardMenu style={{color:'white'}}>
+                            <IconButton name='share'/>    
+                        </CardMenu>     
+                    </Card>
+                    </div>
                 </div>
+                
                 
 
             )
-        }else if(this.state.activeTab === 0){
+        }else if(this.state.activeTab === 1){
             return(
                 <div className='projects-grid'>
-                    <Card shadow={10} style={{minWidth: '450', margin: 'auto'}}>
-                        <CardTitle style={{color: 'Black', height:'176px;',}}>Tea</CardTitle>
+                    <Card shadow={10} style={{minWidth: '450', margin: 'auto', background:'url(https://moovitapp.com/index/en-gb/public-transit-resources/location/site_34735638.jpg)'}}>
+                        <CardTitle style={{color: 'Black', height:'176px;',}}>UE</CardTitle>
                         <CardText><br></br><br></br><br></br></CardText>
                         <CardActions border>
-                            {/* <Button style={{color: 'black', marginTop:'auto;'}} href="https://github.com/Yozgyan/High-Low" target='_blank' colored>GitHub</Button> */}
-                            {/* <Button colored>CodePen</Button>
-                            <Button colored>LiveDemo</Button> */}
+                            
                         </CardActions>              
                         <CardMenu style={{color:'white'}}>
                             <IconButton name='share'/>    
@@ -51,7 +81,16 @@ class Locations extends Component{
         else if(this.state.activeTab === 2 ){
             return(
                 <div>
-                    <h1>Cakes</h1>
+                    <Card shadow={50} style={{minWidth: '550', margin: 'auto', background:'url(https://moovitapp.com/index/en-gb/public-transit-resources/location/site_34735638.jpg)'}}>
+                        <CardTitle style={{color: 'Black', height:'176px;',}}>USA</CardTitle>
+                        <CardText><br></br><br></br><br></br></CardText>
+                        <CardActions border>
+                            
+                        </CardActions>              
+                        <CardMenu style={{color:'white'}}>
+                            <IconButton name='share'/>    
+                        </CardMenu>     
+                    </Card>
                 </div>
 
             )
@@ -69,9 +108,9 @@ class Locations extends Component{
         return(
             <div className='category-tabs'>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
-                    <Tab>Drinks</Tab>
-                    <Tab>Hot Drinks</Tab>
-                    <Tab>Bakery</Tab>
+                    <Tab>UK</Tab>
+                    {/* <Tab>EU</Tab>
+                    <Tab>USA</Tab> */}
                     {/* <Tab>CSS</Tab> */}
                 </Tabs>
 

@@ -267,9 +267,10 @@
 }
 
 .nav-controller .title {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   font-weight: bold
 }
+
 
 .logo-img {
   position: fixed;
@@ -574,10 +575,20 @@
 }
 
 .contact-body{
-  position: relative;
-  top:10vw;
-  left:40%;
-  
+  position: absolute;
+  top:6vw;
+  height: 100%;
+  width: 100%;
+}
+.contact1-body{
+  position: absolute;
+  top:6vw;
+  height: 100%;
+  width: 100%;
+}
+.contact-body img{
+  height:40vw;
+  width: 100%;
 }
 .orders-view-client{
   position: fixed;
@@ -904,3 +915,72 @@
 
 
 }
+
+
+
+/* Special Page CSS */
+.specials-body{
+  margin: 0vw;
+  padding: 0;
+  background: #006666
+}
+.spec-first-img{
+  position: absolute;
+  top:6vw;
+  left:4.5vw;
+  width:90vw;;
+  height: 30vw;
+  
+}
+.spec-first-img .Promo-img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 50vw;
+  border-bottom-right-radius: 50vw;
+}
+.spec-second-img{
+  position: absolute;
+  top:40vw;
+  left:25vw;
+  width: 50vw;;
+  height: 70vw;
+  background: #036635;
+  z-index: 100;
+}
+.spec-second-img .Choose-img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 30vw;
+  border-bottom-right-radius: 30vw;
+  
+}
+.menu-body{
+  width: 100%;
+  background: green
+}
+.menu-body img{
+  width: 100%;
+}
+.category-tabs{
+  position: absolute;
+  top:6vw;
+  left:15vw;
+}
+.projects-grid{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+.firstCard{
+  height: 35vw;
+  
+}
+.category-tabs{
+  background:#036635
+}
+
+
+/* Special Page CSS */

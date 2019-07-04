@@ -30,7 +30,7 @@ class Tea extends Component{
         const { orders } = this.state;
         return( 
 
-            <div className='contact-body'>
+            <div className='contact1-body'>
                 <div>
                     <h1>
                         Client Orders:

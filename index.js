@@ -21,9 +21,8 @@ connection.connect(err => {
     }
 });
 
+ app.use(cors());
 
-
-app.use(cors());
 
 app.get('/', (req, res) =>{
     res.send('go to /products to see products')
@@ -32,7 +31,6 @@ app.get('/', (req, res) =>{
 app.get('/products/add', (req, res) => {
     const {Name, Qty} = req.query;
     const INSERT_ORDERS_QUERY = `INSERT INTO coffeeshop1(Name, Qty) VALUES('${Name}', ${Qty} )` 
-    res.send('adding product');
     connection.query(INSERT_ORDERS_QUERY, (err, results) => 
     {
         if(err){
